@@ -1,0 +1,18 @@
+1- kubeadm init --apiserver-advertise-address $(hostname -i) --pod-network-cidr 10.5.0.0/16
+
+	* mkdir -p $HOME/.kube
+  	  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+  	  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+	Alternatively, if you are the root user, you can run:
+
+  	* export KUBECONFIG=/etc/kubernetes/admin.conf
+
+2- kubeadm init --apiserver-advertise-address $(hostname -i) --pod-network-cidr 10.5.0.0/16
+
+
+
+
+
+
+p@Ssw0rd
